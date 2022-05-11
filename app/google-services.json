@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "203483992565",
+    "project_id": "mamafood-5c17a",
+    "storage_bucket": "mamafood-5c17a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:203483992565:android:dc399c39fcd1d2a59bd0bc",
+        "android_client_info": {
+          "package_name": "com.example.mamafood2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "203483992565-gfuvpqs2pibn4epn5t1scm4ak3hs3970.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCNr4MDYJluE5DrUEo10BZzwax6cLmNxTk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "203483992565-gfuvpqs2pibn4epn5t1scm4ak3hs3970.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

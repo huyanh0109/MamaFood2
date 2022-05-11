@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rlt">
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+<!--    app:mode="same_level"-->
+<!--    app:dragEdge="right">-->
+    <ImageView
+        android:layout_width="155dp"
+        android:layout_height="100dp"
+        android:padding="10dp"
+        android:id="@+id/imagecart"
+        android:src="@drawable/mamafoodx"/>
+    <TextView
+        android:textColor="@color/black"
+        android:fontFamily="@font/avo"
+        android:paddingTop="10dp"
+        android:id="@+id/tvtenf"
+        android:textSize="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="jhsdfhds"
+        android:layout_toRightOf="@+id/imagecart"/>
+    <ImageView
+        android:layout_marginRight="30dp"
+        android:layout_below="@+id/tvtenf"
+        android:id="@+id/btntru"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_remove_circle_40"
+        android:layout_alignParentRight="true"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btntru"
+        android:text="321382"
+        android:paddingRight="20dp"
+        android:textColor="@color/red"
+        android:fontFamily="@font/andro"
+        android:layout_margin="10dp"
+        android:id="@+id/tvgiaf"
+        android:layout_alignParentRight="true"
+        />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/btnslf"
+        android:layout_below="@+id/tvtenf"
+        android:id="@+id/btncong"
+        android:src="@drawable/ic_baseline_add_circle_40"/>
+
+    <TextView
+        android:id="@+id/btnslf"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:textColor="@color/black"
+        android:layout_below="@+id/tvtenf"
+        android:layout_toLeftOf="@+id/btntru"
+        android:text="9"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+</RelativeLayout>

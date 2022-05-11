@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:layout_width="155dp"
+        android:layout_height="100dp"
+        android:padding="10dp"
+        android:id="@+id/imagecart"
+        android:src="@drawable/mamafoodx"/>
+    <TextView
+        android:textColor="@color/black"
+        android:fontFamily="@font/avo"
+        android:paddingTop="10dp"
+        android:id="@+id/tvtenf"
+        android:textSize="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="jhsdfhds"
+        android:layout_toRightOf="@+id/imagecart"/>
+
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="321382"-->
+<!--        android:paddingRight="20dp"-->
+<!--        android:layout_margin="10dp"-->
+<!--        android:id="@+id/tvgiaf"-->
+<!--        android:layout_alignParentRight="true"-->
+<!--        android:layout_below="@+id/tvtenf"-->
+<!--        android:textColor="@color/red"-->
+<!--        android:fontFamily="@font/andro"-->
+<!--        />-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Số Lượng:"
+        android:layout_margin="10dp"
+        android:layout_toRightOf="@+id/imagecart"
+        android:id="@+id/sl"
+        android:layout_below="@+id/tvtenf"/>
+
+    <TextView
+        android:id="@+id/btnslf"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/tvtenf"
+        android:layout_toRightOf="@+id/sl"
+        android:text="9"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+</RelativeLayout>

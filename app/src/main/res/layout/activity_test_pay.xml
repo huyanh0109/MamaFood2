@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Test.Order">
+    <androidx.appcompat.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/toolbar"
+        app:title="Giỏ Hàng Của Bạn"
+        app:titleTextColor="@color/white"
+        app:titleMarginStart="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/orange"/>
+    <Button
+        android:id="@+id/btnpay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thanh Toán"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        tools:layout_editor_absoluteX="301dp"
+        tools:layout_editor_absoluteY="677dp" />
+
+    <ListView
+        android:id="@+id/lv_pay"
+        android:layout_below="@+id/toolbar"
+        android:layout_width="404dp"
+        android:layout_height="500dp"
+        tools:layout_editor_absoluteX="3dp"
+        tools:layout_editor_absoluteY="106dp" />
+
+    <TextView
+        android:id="@+id/tv_sum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lv_pay"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="125dp"
+        android:gravity="center"
+        android:text="Tổng tiền"
+        android:textSize="20dp"
+        tools:layout_editor_absoluteX="90dp"
+        tools:layout_editor_absoluteY="683dp" />
+
+</RelativeLayout>

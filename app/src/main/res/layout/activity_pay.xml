@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Activity.Pay" android:layout_height="wrap_content"
+     android:layout_width="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+    <androidx.appcompat.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/toolbar"
+        app:title="Thanh Toán"
+        app:titleTextColor="@color/white"
+        app:titleMarginStart="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/orange"/>
+
+    <TextView
+        android:id="@+id/adr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_margin="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="Địa chỉ người nhận:"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textSize="23dp"
+        android:textStyle="bold" />
+    <EditText
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Họ và tên"
+        android:background="@drawable/shapelogin"
+        android:layout_below="@+id/adr"
+        android:id="@+id/edtname"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtname"
+        android:background="@drawable/shapelogin"
+        android:hint="Số điện thoại"
+        android:layout_margin="10dp"
+        android:id="@+id/edtsdt"/>
+    <EditText
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Địa chỉ"
+        android:background="@drawable/shapelogin"
+        android:layout_below="@+id/edtsdt"
+        android:id="@+id/edtadr"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvsumf"
+        android:text="Tổng tiền thanh toán:"
+        android:layout_margin="20dp"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textSize="23dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/edtadr"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tổng tiền sản phẩm:"
+        android:id="@+id/tvsumr"
+        android:textSize="15dp"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/tvsumf"/>
+    <TextView
+        android:id="@+id/tvsumKK"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="textEnd"
+        android:text="213213"
+        android:textColor="@color/black"
+        android:paddingRight="30dp"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thuế:"
+        android:textSize="15dp"
+        android:layout_margin="10dp"
+        android:id="@+id/tvtax"
+        android:layout_below="@+id/tvsumr"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="30dp"
+        android:text="+10% VAT"
+        android:textAlignment="textEnd"
+        android:textStyle="italic" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phí ship:"
+        android:textSize="15dp"
+        android:layout_margin="10dp"
+        android:id="@+id/tvpay"
+        android:layout_below="@+id/tvtax"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="30dp"
+        android:text="+30.000₫"
+        android:textAlignment="textEnd"
+        android:textStyle="italic" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thành Tiền:"
+        android:textSize="15dp"
+        android:layout_margin="10dp"
+        android:id="@+id/tvship"
+        android:layout_below="@+id/tvpay"
+        />
+
+
+    <TextView
+        android:id="@+id/tvsumLL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="30dp"
+        android:text="213213"
+        android:textAlignment="textEnd"
+        android:textColor="@color/red" />
+
+    <TextView
+        android:id="@+id/tvhinhthucpay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvship"
+        android:layout_marginStart="20dp"
+        android:textAllCaps="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+
+        android:text="Hình thức thanh toán:"
+        android:textColor="@color/black"
+        android:textSize="23dp"
+        android:textStyle="bold" />
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rgbtn"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/tvhinhthucpay">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thanh Toán offline"
+            android:id="@+id/rbtnoffline"
+            />
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thanh Toán online"
+        android:id="@+id/rbtnonline" />
+    </RadioGroup>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/btnbackp"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:padding="30dp"
+            android:onClick="backh"
+            android:drawableStart="@drawable/baseline_keyboard_return_24"
+            android:layout_alignParentBottom="true"
+            android:background="@color/minorange"
+            android:textSize="25dp"
+            android:textColor="@color/white"
+            android:text=""
+            android:textAlignment="center"
+            android:textStyle="bold" />
+    <Button
+        android:id="@+id/btnpay"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Thanh Toán"
+        android:drawableEnd="@drawable/outline_payments_white_24"
+        android:background="@drawable/shapebtn"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/btnbackp"/>
+
+    </RelativeLayout>
+</LinearLayout>
+</ScrollView>

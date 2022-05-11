@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.CartActivity">
+    <androidx.appcompat.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/toolbar"
+        app:title="Giỏ Hàng Của Bạn"
+        app:titleTextColor="@color/white"
+        app:titleMarginStart="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/orange"/>
+<!--    <Button-->
+<!--        android:id="@+id/btnpay"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Thanh Toán"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_alignParentRight="true"-->
+<!--        tools:layout_editor_absoluteX="301dp"-->
+<!--        tools:layout_editor_absoluteY="677dp" />-->
+    <Button
+        android:onClick="pay"
+        android:id="@+id/btnpay"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="Đên Trang Thanh Toán"
+        android:layout_toRightOf="@+id/btnbackp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:drawableEnd="@drawable/ic_baseline_arrow_forward_24"
+        android:background="@drawable/shapebtn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.813"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.875" />
+    <TextView
+        android:id="@+id/btnbackp"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:padding="30dp"
+        android:drawableStart="@drawable/baseline_keyboard_return_24"
+        android:layout_alignParentBottom="true"
+        android:background="@color/minorange"
+        android:textSize="25dp"
+        android:textColor="@color/white"
+        android:text=""
+        android:textAlignment="center"
+        android:textStyle="bold" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcv_pay"
+        android:layout_below="@+id/toolbar"
+        android:layout_width="404dp"
+        android:layout_height="450dp"
+        tools:layout_editor_absoluteX="3dp"
+        tools:layout_editor_absoluteY="106dp" />
+<TextView
+    android:padding="30dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Giỏ Hàng isEmpty!"
+    android:id="@+id/tvmess"
+    android:textSize="20dp"
+    android:layout_below="@+id/toolbar"
+
+
+    android:background="@drawable/shapemess"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rcv_pay"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="20dp"
+        android:padding="20dp"
+        android:textColor="@color/black"
+        android:textSize="26dp"
+        android:text="Thành Tiền:"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(Giá chưa bao gồm 10% thuế VAT)"
+        android:paddingRight="10dp"
+        android:layout_below="@+id/tv_sumt"
+        android:layout_above="@+id/btnpay"
+        android:layout_alignParentRight="true"/>
+    <TextView
+        android:id="@+id/tv_sumt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rcv_pay"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:padding="20dp"
+
+        android:textColor="@color/red"
+        android:fontFamily="@font/ftitle"
+        android:gravity="center"
+        android:text="Tổng tiền"
+        android:textSize="23dp" />
+
+</RelativeLayout>
+

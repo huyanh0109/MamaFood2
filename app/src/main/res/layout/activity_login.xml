@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.Login">
+
+    <ImageView
+        android:id="@+id/imgmama"
+        android:layout_width="413dp"
+        android:layout_height="204dp"
+        android:layout_alignParentTop="true"
+        app:srcCompat="@drawable/mamafoodx"
+        android:scaleType="centerCrop"
+        />
+
+<!--    <ImageView-->
+<!--        android:id="@+id/imgtitle"-->
+<!--        android:layout_width="407dp"-->
+<!--        android:layout_height="67dp"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        app:srcCompat="@drawable/mamatitle"-->
+<!--        android:scaleType="centerCrop"-->
+<!--        />-->
+
+    <EditText
+        android:id="@+id/edtuser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv1"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/shapelogin"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/edtpass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:background="@drawable/shapelogin"
+        android:inputType="textPassword"
+        tools:layout_editor_absoluteX="110dp"
+        tools:layout_editor_absoluteY="351dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tv2"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/red"
+        android:layout_marginLeft="100dp"
+        android:layout_below="@id/edtpass"
+        android:id="@+id/tvmess"
+        />
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgmama"
+        android:layout_marginTop="33dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="70dp"
+        android:text="Tên đăng nhập" />
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mật khẩu"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/black"
+        android:layout_below="@+id/edtuser"
+        android:layout_marginLeft="70dp"
+ />
+
+    <Button
+        android:id="@+id/btnlogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cbsave"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/shapebtn"
+        android:backgroundTint="#EA5AA5"
+        android:text="Đăng nhập"
+        tools:layout_editor_absoluteX="138dp"
+        tools:layout_editor_absoluteY="468dp" />
+
+    <CheckBox
+        android:id="@+id/cbsave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvmess"
+        android:layout_marginLeft="70dp"
+        android:text="Ghi nhớ đăng nhập"
+
+        android:textColor="@color/gray"
+        android:textStyle="italic"
+        tools:layout_editor_absoluteX="100dp"
+        tools:layout_editor_absoluteY="405dp" />
+
+    <TextView
+        android:id="@+id/tvbot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delicious food made with love"
+        android:textSize="26dp"
+        android:paddingBottom="10dp"
+        android:textColor="@color/red"
+        android:layout_alignParentBottom="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.226"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.755"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnlogin"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:id="@+id/tvsignnow"
+        android:text="Chưa có tài khoản? Đăng kí ngay"
+        android:textStyle="italic" />
+</RelativeLayout>
